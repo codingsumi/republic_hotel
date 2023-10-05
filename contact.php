@@ -42,7 +42,7 @@
 				<div class="col-lg-8 offset-lg-2">
 					<div class="contact-us-area">
 						<h3 class="text-center mb-20">Do not hesitate to contact me if you have any further questions</h3>
-						<form action="#" method="POST">
+						<form id="" >
 							<label id="error" class="text-danger"></label>
 							<label id="msg" class="text-info"></label>
 							<div class="row">
@@ -130,7 +130,6 @@
 				var subject = $('#subject').val();
 				var message = $('#message').val();
 				var contactme = "contact";
-				var response = grecaptcha.getResponse();
 
 				if (fname == "" || email == "" || subject == "" || message == "") {
 					$('#fname,#email,#subject,#message').css('border-color', 'red');
@@ -152,12 +151,11 @@
 							email: email,
 							subject: subject,
 							message: message,
-							contact: contactme,
-							response: response
+							contact: contactme
 						},
 						success: function(data) {
+							console.log(data);
 							$('form').trigger("reset");
-							grecaptcha.reset();
 							$('#msg').html(data);
 							setTimeout(function() {
 								$('#msg').fadeOut('slow');
