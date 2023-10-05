@@ -167,7 +167,7 @@
                         <div class=" comments-area">
                             <h4>Book Your Room</h4>
                             <div class="blog-reply">
-                                <form action="#" method="POST">
+                            <form action="#" method="POST">
                                     <label class="text-danger" id="err"></label>
                                     <label class="text-info" id="msg"></label>
                                     <div class="row">
@@ -175,23 +175,18 @@
                                             <input type="text" id="name" placeholder="Name *" onKeyPress="return onlyAlphabets(event,this)">
                                         </div>
                                         <div class="col-lg-12">
-                                            <input type="text" id="phone" placeholder="Mobile *" onkeypress="return numberonly(event);" maxlength="10">
+                                            <input type="text" id="phone" placeholder="Mobile *" maxlength="10" onkeypress="return numberonly(event);">
                                         </div>
                                         <div class="col-lg-12">
-                                            <input type="email" id="email" placeholder="Email *" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="@ symbol must be exists">
+                                            <input type="email" id="email" placeholder="Email *">
                                         </div>
                                         <div class="col-lg-12">
-                                            <input type="text" id="subject" placeholder="Subject">
+                                            <input type="date" type="text" placeholder="Arrival date *">
                                         </div>
                                         <div class="col-lg-12">
-                                            <input size="16" id="datepicker1" type="text" placeholder="Arrival date *">
+                                            <input type="date" type="text" placeholder="Departure date *">
                                         </div>
                                         <div class="col-lg-12">
-                                            <input size="16" id="datepicker2" type="text" placeholder="Departure date *">
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <textarea placeholder="Your Comments*" id="message"></textarea>
-                                            <div class="g-recaptcha" data-sitekey="6LeSZ60UAAAAALqXhWWFhBPoUhwsRTgmCv3OZKFO"></div>
                                             <button class="theme-btn theme-btn6" type="button" name="replysubmit">Book Now</button>
                                         </div>
                                     </div>
@@ -258,10 +253,6 @@
         $('#myCarousel').carousel({
             interval: 900
         });
-    </script>
-    <script>
-        $('#datepicker1').datepicker();
-        $('#datepicker2').datepicker();
     </script>
     <script>
         $(document).ready(function() {
