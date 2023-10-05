@@ -169,6 +169,7 @@
                                     <label class="text-danger" id="err"></label>
                                     <label class="text-info" id="msg"></label>
                                     <div class="row">
+                                        <input type="hidden" name="roomtype" value="Standard Delux Rooms">
                                         <div class="col-lg-12">
                                             <input type="text" id="name" placeholder="Name *" onKeyPress="return onlyAlphabets(event,this)">
                                         </div>
@@ -179,10 +180,13 @@
                                             <input type="email" id="email" placeholder="Email *">
                                         </div>
                                         <div class="col-lg-12">
-                                            <input type="date" type="text" placeholder="Arrival date *">
+                                            <input type="date" id="checkin" placeholder="Arrival date *">
                                         </div>
                                         <div class="col-lg-12">
-                                            <input type="date" type="text" placeholder="Departure date *">
+                                            <input type="date" id="checkout" placeholder="Departure date *">
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <input type="text" id="price" placeholder="price" readonly value="4000.00">
                                         </div>
                                         <div class="col-lg-12">
                                             <button class="theme-btn theme-btn6" type="button" name="replysubmit">Book Now</button>
