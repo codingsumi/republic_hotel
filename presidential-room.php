@@ -170,21 +170,21 @@
                                     <label class="text-danger" id="err"></label>
                                     <label class="text-info" id="msg"></label>
                                     <div class="row">
-                                        <input type="hidden" name="roomtype" value="Presidential Suite">
+                                        <input type="hidden" id="room_type" value="Presidential Suite">
                                         <div class="col-lg-12">
                                             <input type="text" id="name" placeholder="Name *" onKeyPress="return onlyAlphabets(event,this)">
                                         </div>
                                         <div class="col-lg-12">
-                                            <input type="text" id="phone" placeholder="Mobile *" maxlength="10" onkeypress="return numberonly(event);">
+                                            <input type="text" id="mobile" placeholder="Mobile *" maxlength="10" onkeypress="return numberonly(event);">
                                         </div>
                                         <div class="col-lg-12">
                                             <input type="email" id="email" placeholder="Email *">
                                         </div>
                                         <div class="col-lg-12">
-                                            <input type="date" id="checkin" placeholder="Arrival date *">
+                                            <input type="date" id="check_in" placeholder="Arrival date *">
                                         </div>
                                         <div class="col-lg-12">
-                                            <input type="date" id="checkout" placeholder="Departure date *">
+                                            <input type="date" id="check_out" placeholder="Departure date *">
                                         </div>
                                         <div class="col-lg-12">
                                             <input type="text" id="price" placeholder="price" readonly value="20000.00">
@@ -238,7 +238,6 @@
     </section>
     <?php include_once 'components/footer.php'; ?>
 
-
     <script>
         $('#myCarousel').carousel({
             interval: 900
@@ -247,17 +246,15 @@
     <script>
         $(document).ready(function() {
             $('button').click(function() {
-                var name = $('#name').val();
-                var email = $('#email').val();
-                var phone = $('#phone').val();
-                var subject = $('#subject').val();
-                var date1 = $('#datepicker1').val();
-                var date2 = $('#datepicker2').val();
-                var message = $('#message').val();
-                var presidential = "book_p";
-                var response = grecaptcha.getResponse();
+                let name = $('#name').val()
+                let mobile = $('#mobile').val()
+                let email = $('#email').val()
+                let check_in = $('#check_in').val()
+                let check_out = $('#check_out').val()
+                let room_type = $('#room_type').val()
+                let price = $('#price').val()
 
-                if (name == "" || email == "" || phone == "" || date1 == "" || date2 == "" || message == "") {
+                if (name == "" || email == "" || mobile == "" || check_in == "" || check_out == "") {
                     $('#err').html("All (*) Fields Are Required");
                     setTimeout(function() {
                         $('#err').fadeOut('slow');
@@ -273,19 +270,19 @@
                         type: "post",
                         data: {
                             name: name,
+                            mobile: mobile,
                             email: email,
-                            phone: phone,
-                            subject: subject,
-                            date1: date1,
-                            date2: date2,
-                            message: message,
-                            presidential: presidential,
-                            response: response
+                            check_in: check_in,
+                            check_out: check_out,
+                            room_type: room_type,
+                            price: price
                         },
                         success: function(data) {
                             $('form').trigger("reset");
-                            grecaptcha.reset();
                             $('#msg').html(data);
+                            // setTimeout(function() {
+                            //     $('#msg').fadeOut('slow');
+                            // }, 5000);
                         }
                     });
                 }
