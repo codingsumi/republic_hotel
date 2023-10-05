@@ -1,0 +1,258 @@
+@media only screen and (max-width: 1199px){
+    .hero-area-form .theme-btn {
+		padding: 5px;
+	}
+	.event-box {
+		padding: 20px;
+	}
+	.event-left {
+		padding-right: 15px;
+	}
+}
+@media only screen and (max-width: 991px){
+    .single-available {
+		margin-right: 0;
+		padding: 50px;
+	}
+
+	.nav-tabs li {
+		font-size: 16px;
+	}
+
+	.nav-tabs {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	.news-bg-1 {
+		grid-row: span 1;
+	}
+
+	.news-bg-4 {
+		grid-column: span 1;
+	}
+
+	.news-content {
+		grid-template-columns: repeat(2,50%);
+	}
+
+	.single-form-box {
+		width: 33.33%;
+		margin-bottom: 15px;
+	}
+
+	.hero-area-form {
+		display: block;
+		overflow: hidden;
+	}
+
+	.hero-area-form select {
+		padding: 10px 15px;
+	}
+
+	.hero-area-content form {
+		padding-bottom: 15px;
+	}
+
+	.hero-area-form .theme-btn {
+		margin-top: 35px;
+	}
+	.about-wrap:after {
+		right: 0;
+	}
+	.gallery-content {
+		grid-template-columns: repeat(2, 1fr);
+		height: 700px;
+		max-width: 720px;
+		margin: auto;
+	}
+
+	.single-gallery-box {
+		grid-column: span 1;
+	}
+	.header-bottom li a.theme-btn {
+		display: none;
+	}
+	.sidebar {
+		padding: 0;
+		margin: 40px auto 0;
+		max-width: 400px;
+	}
+}
+@media only screen and (max-width: 767px){
+	.mainmenu {
+		display: none;
+	}
+	.responsive-menu,
+	.slicknav_menu {
+		display: block;
+	}
+	.slicknav_nav {
+		position: absolute;
+		background: #000;
+		right: 15px;
+		top: 100%;
+		z-index: 9;
+		border: 1px solid #fff;
+		padding: 10px;
+		min-width: 200px;
+	}
+	.slicknav_menu .slicknav_menutxt {
+		display: none;
+	}
+	.slicknav_menu {
+		float: right;
+	}
+	.slicknav_menu .slicknav_icon {
+		margin: 0;
+	}
+	.slicknav_nav a:hover {
+		background: transparent;
+		border-radius: 0;
+		color: #fff;
+	}
+	.menubar.sticky li {
+		padding-left: 10px;
+		padding-right: 15px;
+	}
+	.slicknav_btn {
+		background-color: transparent;
+		float: none;
+	}
+    .menubar li a,
+	.slicknav_nav .slicknav_row, .slicknav_nav a {
+		padding: 0;
+		margin: 5px 0;
+	}
+    .nav-tabs li {
+		width: 33.33%;
+	}
+	.nav-tabs {
+		justify-content: normal;
+	}
+	.hero-area-content h1 {
+		font-size: 45px;
+	}
+	.single-form-box {
+		width: 100%;
+		float: none;
+	}
+	.hero-area-form .theme-btn {
+		margin-top: 8px;
+	}
+	.event-box {
+		max-width: 360px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.about-img {
+		margin-top: 40px;
+	}
+	.gallery-content {
+		display: block;
+		height: auto;
+		max-width: 350px;
+		margin: auto;
+	}
+
+	.single-gallery-box {
+		height: 250px;
+		margin-top: 30px;
+	}
+	.single-gallery-box:first-child {
+		margin-top: 0;
+	}
+	.blog-detail-middle img {
+		padding: 0;
+		max-width: 100%;
+	}
+	.blog-detail-middle {
+		display: block;
+	}
+	.comments-area li ul {
+		margin-left: 15px;
+	}
+}
+@media only screen and (max-width: 575px){
+	.sec-title h3,
+	.sec-title h2 {
+        font-size: 24px;
+    }
+    .single-news-box,
+    .single-team-member {
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+	.nav-tabs li {
+		width: 100%;
+	}
+	.nav-tabs li a {
+		padding: 15px 0 10px;
+	}
+		.single-news-box {
+			height: 250px;
+			margin-top: 30px;
+		}
+	.news-content {
+		display: block;
+		height: auto;
+		margin-top: 0;
+	}
+	.nav-tabs {
+		padding-top: 0;
+	}
+	.single-available {
+		padding: 20px;
+	}
+	.available-price {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+	.video-box h2 {
+		font-size: 30px;
+	}
+	.about-wrap p {
+		margin-bottom: 5px;
+	}
+	.about-content {
+		margin-top: 25px;
+	}
+	.about-wrap {
+		padding: 20px;
+	}
+	.gallery-box-overlay h4 {
+		letter-spacing: 2px;
+		margin: 0;
+	}
+	.special-offer-photo img {
+		padding-right: 0;
+	}
+	.special-offer-caption {
+		width: 100%;
+		max-width: 250px;
+	}
+
+	.special-offer-caption a {
+		font-size: 16px;
+		line-height: normal;
+		padding: 5px 13px;
+	}
+
+	.special-offer-caption-text {
+		padding: 5px 13px;
+		font-size: 13px;
+	}
+	.breadcrumb-area {
+		padding: 240px 0 80px;
+	}
+	.hero-area {
+    z-index: 1;
+    position: relative;
+    background-position: center;
+	/*padding: 198px 0 5px;*/
+    background-size: cover;
+}
+	
+}

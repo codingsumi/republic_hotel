@@ -1,0 +1,2009 @@
+@import url('https://fonts.googleapis.com/css?family=Literata&amp;display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Playfair+Display:400,700');
+/*
+Theme Name: Hotelmola
+Author: jSoft
+Version: 1.0
+Description: Hotel and Resort Responsive HTML5 Template
+*/
+
+/**
+ *** CSS Indexing ***
+ * THEME DEFAULT CSS
+ * RESET CSS
+ * HEADER TOP CSS
+ * HEADER BOTTOM CSS
+ * MENU AREA CSS
+ * HERO AREA CSS
+ * ABOUT AREA CSS
+ * SERVICE AREA CSS
+ * SKILLS AREA CSS
+ * CHOOSE AREA CSS
+ * TEAM AREA CSS
+ * PORTFOLIO AREA CSS
+ * PRICING AREA CSS
+ * CALCULATOR AREA CSS
+ * BLOG AREA CSS
+ * PARTNER AREA CSS
+ * FOOTER AREA CSS
+ * HOME 2 PAGE DEFAULT CSS
+ * SERVICE AREA CSS
+ * ABOUT AREA CSS
+ * SERVICE SLIDER AREA CSS
+ * CHOOSE AREA CSS
+ * TESTIMONIAL AREA CSS
+ * TEAM AREA CSS
+ * PRICING AREA CSS
+ * CALCULATOR AREA CSS
+ * PORTFOLIO AREA CSS
+ * HOME 3 PAGE DEFAULT CSS
+ * HERO AREA CSS
+ * SERVICE AREA CSS
+ * PORTFOLIO AREA CSS
+ * TESTIMONIAL AREA CSS
+ * SKILLS AREA CSS
+ * GET A QUOTE CSS
+ * ABOUT 1 PAGE CSS
+ * BLOG PAGE CSS
+ * BLOG DETAILS PAGE CSS
+ * 404 PAGE CSS
+ * SCROLL-TO-TOP CSS
+ * PRE LOADER CSS
+ *  CSS
+**/
+
+/*----------------------------------
+--------- THEME DEFAULT CSS --------
+----------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans:300,400,600|Playfair+Display:400,700');
+body {
+    line-height: 24px;
+    font-size: 14px;
+    color: #333333;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+/*----------------------------
+---------- RESET CSS ---------
+----------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	/* font-family:'TrajanProRegular'; */
+	color: #1c1c1c;
+	font-weight: 500;
+	font-family: 'Literata', serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+}
+h1 {
+    font-size: 55px;
+}
+h2 {
+    font-size: 23px;
+    font-family: 'TrajanProRegular';
+}
+h3 {
+    font-size: 25px;
+    color: #7b3a02;
+    font-weight: 300;
+    font-family: 'TrajanProRegular';
+}
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 16px;
+}
+h6 {
+    font-size: 14px;
+}
+a {
+    transition: 0.4s;
+}
+a,
+a:hover {
+    color: #333333;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+iframe {
+    width: 100%;
+    border: none;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+button:focus {
+    text-decoration: none;
+    border: none;
+    outline: 0;
+}
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+select:focus,
+select:active {
+    box-shadow: none;
+    border: 0;
+    outline: 0
+}
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+select,
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="search"],
+input[type="number"],
+input[type="password"],
+textarea {
+    background: transparent;
+    width: 100%;
+    padding: 8px 15px;
+    border: 1px solid #848282;
+    color: #000;
+    margin-bottom: 15px;
+}
+select,
+input[type="text1"],
+textarea {
+    background: transparent;
+    width: 100%;
+    padding: 7px 15px;
+    border: 1px solid #848282;
+    color: #000;
+    margin-bottom: 15px;
+}
+textarea:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+button {
+	cursor: pointer;
+}
+.sec-title {
+    text-align: center;
+}
+.sec-title h2 span {
+    color: #c19b77;
+}
+.pt-100 {
+    padding: 100px 0 0;
+}
+.pt-70 {
+    padding-top: 70px;
+}
+.pt-30 {
+    padding-top: 30px;
+}
+.pb-100 {
+    padding-bottom: 100px;
+}
+.pb-50 {
+    padding-bottom: 50px;
+}
+.ptb-100 {
+    padding: 50px 0;
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+.mb-50 {
+	margin-bottom: 50px;
+}
+.owl-nav div {
+	position: absolute;
+    top: 50%;
+    left: 0;
+    width: 35px;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 8px;
+    transition: 0.4s;
+    margin-top: -20px;
+}
+.owl-nav div:hover {
+	background: #c19b77;
+}
+.owl-nav div.owl-next {
+    right: 0;
+    left: auto;
+}
+.owl-dots {
+    text-align: center;
+    margin-top: 30px;
+}
+.owl-dot {
+    width: 12px;
+    height: 12px;
+	border-radius: 100%;
+	border: 1px solid #fff;
+    display: inline-block;
+    margin: 0 2px;
+}
+.owl-dot.active {
+    background: #c19b77;
+	border: 1px solid #c19b77;
+}
+.theme-btn {
+    background: #c19b77;
+	border: 1px solid #c19b77;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    padding: 6px 22px;
+	text-transform: uppercase;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.theme-btn:hover {
+    background: transparent;
+    color: #c19b77;
+	border: 1px solid #c19b77;
+}
+.flexbox-center {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.display-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.display-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*--------------------------------------
+-------- HEADER TOP AREA CSS START --------
+---------------------------------------*/
+.header-top-content li {
+    display: inline-block;
+	margin-right: 20px;
+}
+
+.header-top {
+    color: #000;
+}
+
+.header-top-content a {
+    color: #878787;
+}
+
+.header-top-content li i {
+    margin-right: 5px;
+}
+.social-icons a {
+	font-size: 16px;
+    margin-left: 5px;
+}
+.header-top-content a:hover {
+    color: #878787;
+}
+.header-top-content select {
+    margin-bottom: 0;
+    border: none;
+    width: auto;
+    color: #878787;
+    padding: 0;
+    margin-left: 10px;
+}
+/*--------------------------------------
+--------- HEADER TOP AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+------ HEADER BOTTOM AREA CSS START ------
+---------------------------------------*/
+.header-area {
+    position: relative;
+    top: 0;
+    padding: 5px 0 8px;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    z-index: 9;
+}
+.header-top .row {
+    border-bottom: 1px solid #c19b77;
+    padding-bottom: 2px;
+}
+.mainmenu {
+	text-align: right;
+}
+.mainmenu li {
+    display: inline-block;
+    padding-left: 11px;
+    padding-right: 0px;
+    position: relative;
+}
+.mainmenu li a {
+    color: #000;
+    padding: 17px 0;
+    display: inline-block;
+    font-family:'TrajanProRegular';
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.mainmenu li a.theme-btn {
+    color: #fff;
+    padding: 5px 15px;
+    margin-left: 15px;
+}
+.mainmenu li.active > a,
+.mainmenu li a:hover {
+    color: #c19b77;
+    font-family:'TrajanProRegular';
+    font-size: 14px;
+}
+.mainmenu li ul {
+    position: absolute;
+    left: -15px;
+    text-align: left;
+    top: 100%;
+    z-index: 99;
+    background: #000;
+    width: 260px;
+    padding: 10px;
+    transition: 0.4s;
+    transform: scale(0);
+}
+.mainmenu li ul li {
+    display: block;
+}
+.mainmenu li ul li a {
+    padding: 7px 0;
+    color: #fff;
+    font-size: 14px;
+    font-family:'TrajanProRegular';
+}
+.mainmenu ul li ul li a::before {
+    width: 0 !important;
+}
+.mainmenu ul li ul li:hover a::before ,
+.mainmenu ul li ul li.active a::before {
+    width: 100% !important;
+}
+.mainmenu li:hover ul {
+    transform: scale(1);
+}
+.responsive-menu {
+    display: none;
+}
+.slicknav_nav {
+    background-color: #222222;
+    padding: 5px 12px;
+}
+.slicknav_nav li {
+    display: block;
+}
+.slicknav_nav li a i {
+	display: none;
+}
+.slicknav_nav a:hover, 
+.slicknav_nav .slicknav_row:hover {
+    background: transparent;
+    color: #fff;
+}
+.mainmenu ul li a a::before {
+    display: none;
+}
+a.slicknav_item.slicknav_row {
+    display: inline-block;
+}
+.slicknav_btn {
+    margin: 0;
+    border-radius: 0;
+}
+.slicknav_menu {
+	padding: 15px 0;
+    background: transparent;
+}
+.menu-area {
+    background: #0c1239;
+    margin: 0;
+}
+.menu-right input::-webkit-input-placeholder {
+    color: #333333;
+}
+.menu-right button {
+    color: #fff;
+}
+.menu-right {
+    text-align: right;
+}
+.navbar-form input {
+    border: 2px solid #0c1239 !important;
+    opacity: 1;
+    border-radius: 0;
+    border: none;
+    background: #fff;
+	color: #666;
+    padding: 6px 20px;
+    margin: 0;
+}
+.mainmenu {
+    position: relative;
+    z-index: 9999;
+}
+.mainmenu.sticky {
+    background: #0c1239;
+    position: fixed;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #fff;
+    top: 0;
+}
+.mainmenu.sticky .menu-area {
+    margin: 0 -15px;
+}
+.mainmenu.sticky li {
+	padding-left: 0;
+}
+.mainmenu.sticky .mainmenu li ul {
+	left: 0;
+}
+.mainmenu.sticky .menu-right {
+	padding-right: 0;
+}
+.menu-right button {
+    background: #c19b77;
+    border: none;
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0 8px 8px 0;
+}
+.menu-right form {
+    position: relative;
+	margin-bottom: 0;
+}
+.menu-right input {
+    border-radius: 8px;
+    background: #fff;
+    color: #333333;
+}
+li.showul > ul {
+    display: block;
+}
+.offcanvas-menu li {
+	cursor: pointer;
+}
+.header-bottom.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background: #fff;
+}
+/*--------------------------------------
+--------- MENU AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- HERO AREA CSS START --------
+---------------------------------------*/
+.hero-area {
+    margin-top: -30px;
+    overflow: hidden;
+}
+.mainmenu input {
+    margin-bottom: 0;
+}
+.single-hero-area {
+    padding: 150px 0;
+    z-index: 1;
+    position: relative;
+    background-image: url('../images/hero-area-bg-1.html');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.single-hero-area::before {
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    position: absolute;
+    background: #000000;
+}
+.hero-area-content {
+        text-align: center;
+    color: #fff;
+   
+}
+.hero-area-content p {
+	max-width: 650px;
+	margin: 20px auto 50px;
+}
+.hero-area-content h2 {
+    color: #c19b77;
+	font-size: 48px;
+	font-weight: 400;
+	font-family: 'Great Vibes', cursive;
+}
+.hero-area-content h1 {
+    color: #fff;
+	font-size: 72px;
+	font-family: 'Playfair Display', serif;
+}
+.vegas-timer-progress {
+    background-color: #c19b77;
+}
+.home2 .vegas-timer-progress {
+    background-color: #af3c65;
+}
+.home3 .vegas-timer-progress {
+    background-color: #ffb600;
+}
+.hero-area {
+    z-index: 1;
+    position: relative;
+    background-position: center;
+	padding: 0px 0 0px;
+    background-size: cover;
+}
+.hero-area-content form {
+    color: #fff;
+    background: #fff;
+    padding: 15px 30px 15px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.hero-area-content form p {
+    margin: 0 0 5px;
+}
+.hero-area-form {
+    display: flex;
+    align-items: flex-end;
+}
+
+.single-form-box {
+    width: 20%;
+    float: left;
+    padding: 0 5px;
+}
+
+.hero-area-form select:focus,.hero-area-form select,.hero-area-form input {
+    border: 1px solid #656161;
+    margin-bottom: 0;
+}
+
+.hero-area-form .theme-btn {
+    width: 100%;
+}
+/*------------------------------------
+--------- HERO AREA CSS END ---------
+------------------------------------*/
+
+/*------------------------------------
+-------- ABOUT AREA CSS START --------
+-------------------------------------*/
+.single-about-box {
+	margin-top: 30px;
+}
+.single-about-box p {
+    margin: 8px 0 23px;
+}
+
+.single-about-box a {
+    margin-top: 10px;
+}
+/*----------------------------------------
+------------ ABOUT AREA CSS END ----------
+-----------------------------------------*/
+
+/*-------------------------------------
+------ available AREA CSS START -------
+--------------------------------------*/
+.available-area {
+    background: #fbfbfb;
+    color: #000;
+}
+
+.available-area h2 {
+    color: #6d3600;
+}
+
+.sec-title {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 580px;
+}
+
+.sec-title h2 {
+    margin: 5px 0 25px;
+    position: relative;
+    padding-bottom: 25px;
+	z-index: 1;
+	font-family:'TrajanProRegular';
+}
+
+.sec-title h2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 150px;
+    height: 2px;
+    background: #c19b77;
+    margin: auto;
+    z-index: 1;
+}
+
+/*.sec-title h2::after {
+    content: "\e97c";
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: icofont;
+    color: #c19b77;
+    z-index: 9;
+    background: #fff;
+    max-width: 40px;
+}
+*/
+.single-available h4 {
+	font-weight: 700;
+}
+.single-available {
+    background: #fff;
+    color: #878787;
+    height: 100%;
+    margin-right: -30px;
+    padding: 15px 35px;
+}
+.single-available p {
+    margin: 5px 0 20px;
+}
+
+.available-icon a {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 100%;
+    border: 1px solid #ffeb3b;
+    line-height: 33px;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.available-price {
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+}
+
+.available-price p {
+    margin: 0;
+}
+
+.available-price p span {
+    font-size: 36px;
+    color: #000;
+    font-weight: 600;
+    margin: 0 2px;
+}
+
+.available-icon {
+    padding-bottom: 15px;
+}
+
+.available-icon a:hover {
+    color: #c19b77;
+    border-color: #c19b77;
+}
+
+.available-price a {
+    color: #c19b77;
+}
+/*---------------------------------
+----- available AREA CSS END ------
+----------------------------------*/
+
+/*-------------------------------------
+-------- service AREA CSS START --------
+--------------------------------------*/
+.service-area .sec-title h2::after {
+	background: #fff;
+}
+.single-service {
+	margin-top: 30px;
+}
+.single-service h4 {
+    margin-bottom: 15px;
+}
+
+.single-service a {
+    margin-top: 5px;
+}
+.nav-tabs li {
+    text-align: center;
+    font-size: 20px;
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Literata', serif;
+}
+.nav-tabs {
+    padding: 10px 20px 0;
+    justify-content: space-between;
+	background:#fff;
+}
+
+.nav-tabs li a i {
+    display: block;
+    color: #c19b77;
+    margin-bottom: 5px;
+}
+
+.nav-tabs li a {
+    border-bottom: 3px solid transparent;
+    /*padding: 10px 0 25px;*/
+    display: block;
+	color: #000;
+}
+
+.nav-tabs li a.active {
+    border-bottom: 3px solid #c19b77;
+}
+/*-------------------------------------
+--------- service AREA CSS END ---------
+--------------------------------------*/
+
+/*--------------------------------------
+---------- video AREA CSS START --------
+---------------------------------------*/
+.video-area {
+	background: url(../images/video-bg.jpg) no-repeat center center / cover;
+	background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+.video-area::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0.75;
+}
+.popup-youtube i {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    display: inline-block;
+    transition: all 0.4s;
+}
+.popup-youtube i:hover {
+	color: #c19b77;
+    background: #fff;
+}
+.video-box {
+    text-align: center;
+    color: #fff;
+}
+
+.video-box h2 {
+    color: #fff;
+    font-size: 50px;
+}
+
+.video-box p {
+    margin: 10px 0 25px;
+}
+/*--------------------------------------
+----------- video AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- TEAM AREA CSS START --------
+---------------------------------------*/
+.single-team-member {
+    text-align: center;
+    transition: all 0.4s;
+	margin-top: 30px;
+}
+.team-member-info {
+    padding: 15px 0 10px;
+}
+.team-member-info p {
+	font-size: 20px;
+	margin: 5px 0 12px;
+	color: #c19b77;
+    font-weight: 400;
+    font-family: 'Great Vibes', cursive;
+}
+.team-member-info a {
+    color: #c19b77;
+	border: 1px solid #c19b77;
+	margin: 0 3px;
+	width: 35px;
+	height: 35px;
+	line-height: 34px;
+	border-radius: 100%;
+	display: inline-block;
+}
+.team-member-info a:hover {
+    color: #fff;
+    background: #c19b77;
+}
+.team-area .sec-title h2::after {
+    background: #fff;
+}
+/*--------------------------------------
+--------- TEAM AREA CSS END ---------
+---------------------------------------*/
+
+/*------------------------------------
+----- TESTIMONIAL AREA CSS START -----
+-------------------------------------*/
+.testimonial-area .sec-title h2::after {
+    display: none;
+}
+.testimonial-area h4,
+.testimonial-area h2 {
+    color: #fff;
+}
+.testimonial-area {
+    background: url(../img/video-bg.html) no-repeat center center / cover;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.testimonial-area::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0.75;
+}
+.testimonial-box h3 {
+	font-size: 20px;
+	margin: 3px 0;
+}
+.testimonial-box p {
+	margin-top: 10px;
+}
+.testimonial-box img {
+	width: auto !important;
+	margin: auto;
+	margin-bottom: 5px;
+}
+.testimonial-box {
+	text-align: center;
+	max-width: 700px;
+	margin: auto;
+}
+/*-----------------------------------
+------ TESTIMONIAL AREA CSS END -----
+------------------------------------*/
+
+/*------------------------------------
+--------- news AREA CSS START --------
+-------------------------------------*/
+.news-area .sec-title h2::after {
+	background: #fff;
+}
+.news-content {
+    height: 600px;
+    display: grid;
+    margin-top: 30px;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.single-news-box {
+    background-repeat: no-repeat;
+    background-size: cover;
+	position: relative;
+    background-position: center;
+}
+.news-bg-1 {
+    background-image: url(../images/news1.jpg);
+	grid-row: span 2;
+}
+.news-bg-2 {
+    background-image: url(../images/news2.jpg);
+}
+.news-bg-3 {
+    background-image: url(../images/news3.jpg);
+}
+.news-bg-4 {
+    background-image: url(../images/news4.jpg);
+	grid-column: span 2;
+}
+.news-bg-5 {
+    background-image: url(../images/ev1.jpg);
+	grid-row: span 2;
+}
+.news-bg-6 {
+    background-image: url(../images/ev2.jpg);
+}
+.news-bg-7 {
+    background-image: url(../images/ev3.jpg);
+}
+.news-bg-8 {
+    background-image: url(../images/ev4.jpg);
+	grid-column: span 2;
+}
+.news-box-overlay {
+    padding: 5px;
+    transform: scaleY(0);
+    transition: all 0.4s;
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0,.75);
+	text-align: center;
+	color: #fff;
+    height: 100%;
+    width: 100%;
+}
+.news-box-overlay h4 {
+	color: #fff;
+	display: inline-block;
+	font-weight: 400;
+}
+.single-news-box:hover .news-box-overlay {
+    transform: scaleY(1);
+}
+.news-box-overlay li {
+    display: inline-block;
+    margin: 0 6px;
+}
+
+.news-box-overlay ul {
+    margin-top: 10px;
+}
+/*-----------------------------------
+--------- news AREA CSS END ---------
+------------------------------------*/
+
+/*--------------------------------------
+----- newsletter SLIDER CSS START ------
+---------------------------------------*/
+.newsletter-area {
+    background: url(../img/newsletter-bg.html) no-repeat center center / cover;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.newsletter-area::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0.75;
+}
+.newsletter-box {
+    text-align: center;
+}
+
+.newsletter-box h2 {
+    color: #fff;
+    margin: 17px 0 20px;
+}
+
+.newsletter-box form {
+    max-width: 400px;
+    margin: auto;
+    position: relative;
+}
+
+.newsletter-box button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: #c19b77;
+    color: #fff;
+    border: none;
+    padding: 0 30px;
+}
+
+.newsletter-box input::-webkit-input-placeholder {
+	color: #fff;
+}
+.newsletter-box input {
+    margin-bottom: 0;
+}
+/*-------------------------------------
+------ newsletter SLIDER CSS END ------
+--------------------------------------*/
+
+/*-----------------------------------
+------- footer AREA CSS START -------
+------------------------------------*/
+.footer {
+    background: #fbfbfb;
+    color: #fff;
+    padding: 50px 0 100px;
+    text-align: center;
+}
+
+.widget h2,.widget h4,.widget a {
+    color: #000;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.widget h2 {
+    margin: 10px 0 15px;
+}
+
+.widget h4 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.widget a {
+    margin: 0 3px;
+}
+
+.widget {
+    margin-top: 50px;
+}
+.copyright {
+    padding: 20px 0 15px;
+    background: #520008;
+    color: #fff;
+}
+
+.copyright a {
+    color: #878787;
+}
+
+.copyright li {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.copyright a:hover {
+    color: #fff;
+}
+/*----------------------------------
+------- footer AREA CSS END --------
+-----------------------------------*/
+
+/*-------------------------------
+-------- HOME 2 PAGE CSS --------
+-------------------------------*/
+.home2 .sec-title h2::after,
+.home2 .hero-area-content h2,
+.home2 .team-member-info p ,
+.home2 .popup-youtube i:hover,
+.home2 .nav-tabs li a i,
+.home2 .available-price a,
+.home2 .mainmenu li.active > a,
+.home2 .mainmenu li a:hover,
+.home2 .sec-title h2 span ,
+.home2 h3 {
+	color: #af3c65;
+}
+.home2 .newsletter-box button ,
+.home2 .team-member-info a:hover,
+.home2 .sec-title h2::before,
+.home2 .menu-right button,
+.home2 .owl-nav div:hover {
+	background: #af3c65;
+}
+.home2 .owl-dot.active,
+.home2 .theme-btn {
+    background: #af3c65;
+	border-color: #af3c65;
+}
+.home2 .team-member-info a,
+.home2 .available-icon a:hover,
+.home2 .theme-btn:hover {
+    color: #af3c65;
+	border-color: #af3c65;
+}
+.home2 .theme-btn:hover {
+	background: transparent;
+}
+.home2 .nav-tabs li a.active ,
+.home2 .header-top .row {
+	border-color: #af3c65;
+}
+
+/*--------------------------------------
+-------- gallery AREA CSS START -------
+---------------------------------------*/
+.gallery-content {
+    height: 560px;
+    display: grid;
+	grid-gap: 15px;
+	padding: 0 15px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.single-gallery-box {
+    background-repeat: no-repeat;
+    background-size: cover;
+	position: relative;
+    background-position: center;
+}
+.gallery-bg-1 {
+    background-image: url(../images/gallery1.html);
+	grid-row: span 2;
+}
+.gallery-bg-2 {
+    background-image: url(../images/gallery2.html);
+}
+.gallery-bg-3 {
+    background-image: url(../images/gallery4.html);
+	grid-column: span 2;
+}
+.gallery-bg-4 {
+    background-image: url(../images/gallery5.html);
+	grid-column: span 2;
+}
+.gallery-bg-5 {
+    background-image: url(../images/gallery3.html);
+}
+.gallery-box-overlay {
+    padding: 15px;
+    opacity: 0;
+    transition: all 0.4s;
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0,.5);
+    height: 100%;
+    width: 100%;
+	position: absolute;
+}
+.gallery-box-overlay h4 {
+    color: #fff;
+    opacity: 0;
+    transition: all 0.4s ease 0.2s;
+	letter-spacing: 10px;
+	margin-left: 5px;
+}
+.single-gallery-box:hover .gallery-box-overlay {
+    opacity: 1;
+}
+.single-gallery-box:hover .gallery-box-overlay h4 {
+    opacity: 1;
+	letter-spacing: 0;
+	margin-left: 0;
+	margin-left: 0;
+}
+.gallery-area .sec-title h2::after,
+.gallery-area {
+	background: #f7f7f7;
+}
+/*---------------------------------------
+--------- gallery AREA CSS END --------
+----------------------------------------*/
+
+/*----------------------------------------
+------- price AREA CSS START -------
+-----------------------------------------*/
+.single-pricing-box {
+    text-align: center;
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.price-area .sec-title h2::after {
+    background: #fff;
+}
+
+.pricing-box-overlay {
+    padding: 12px 0;
+    background: #af3c65;
+    color: #fff;
+    font-size: 20px;
+}
+
+.pricing-box-bottom {
+    padding: 15px 0 30px;
+}
+
+.pricing-box-bottom li {
+    border-bottom: 1px solid #af3c65;
+    display: block;
+    max-width: 200px;
+    margin: 0 auto 10px;
+    padding-bottom: 10px;
+}
+
+.pricing-box-bottom li:last-child {
+    border-bottom: none;
+}
+
+.single-pricing-box::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 50px;
+    bottom: -1px;
+    border: 2px solid #af3c65;
+    border-right: 0;
+    transition: 0.4s;
+}
+
+.pricing-box-top h3 {
+	margin-top: 5px;
+}
+.pricing-box-top {
+    padding: 30px 0;
+}
+
+.single-pricing-box::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    width: 50px;
+    border: 2px solid #af3c65;
+    border-left: 0;
+    transition: 0.4s;
+}
+
+.single-pricing-box:hover::before,.single-pricing-box:hover::after {
+    width: 55%;
+}
+
+/*--------about-area start---------*/
+.about-wrap1 {
+    position: relative;
+    padding: 60px 0px 60px 0px;
+    
+}
+.about-wrap h2 {
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.about-wrap1 h3 {
+    /* font-weight: 500; */
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.about-wrap1 p {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+.about-wrap {
+    position: relative;
+    padding: 60px 0px 60px 30px;
+    border-top: 2px solid #c19b77;
+    border-left: 2px solid #c19b77;
+}
+.about-wrap:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    content: "";
+    background: #c19b77;
+}
+.about-wrap:after {
+    position: absolute;
+    right: -100px;
+    top: -2px;
+    width: 100px;
+    height: 60px;
+    border-top: 2px solid #c19b77;
+    border-right: 2px solid #c19b77;
+    content: "";
+}
+.home2 .about-wrap {
+    border-top: 2px solid #af3c65;
+    border-left: 2px solid #af3c65;
+}
+.home2 .about-wrap:before {
+    background: #af3c65;
+}
+.home2 .about-wrap:after {
+    border-top: 2px solid #af3c65;
+    border-right: 2px solid #af3c65;
+}
+.about-wrap h2 {
+    font-size: 23px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.about-wrap h3 {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.about-wrap p {
+    margin-bottom: 30px;
+}
+.about-content {
+    background: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, .2);
+    padding: 30px 0px;
+    text-align: center;
+}
+.about-content h4 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.about-content p {
+    font-size: 13px;
+    margin-bottom: 0px;
+    line-height: 20px;
+}
+.about-img {
+    position: relative;
+    margin-top: 100px;
+}
+.about-img:before {
+    position: absolute;
+    left: -15px;
+    bottom: -15px;
+    height: 95%;
+    width: 98%;
+    background: #e6892f;
+    content: "";
+    z-index: -9;
+}
+/*--------about-area end---------*/
+
+/*---------------------------------
+------- room AREA CSS START -------
+----------------------------------*/
+.available-room {
+    background: #fff;
+    color: #333333;
+	margin-top: 30px;
+}
+.home2 .single-service:hover img,
+.available-room-img:hover img {
+	transform: scale(1.2)
+}
+.single-service-img img,
+.available-room-img img {
+	transition: 0.9s;
+}
+.single-service-img,
+.available-room-img {
+    overflow: hidden;
+	position: relative;
+}
+.room-content {
+    overflow: hidden;
+	padding: 10px 20px;
+}
+.room-content h3 {
+    margin: 8px 0 5px;
+}
+
+/*----------------------------------------
+------- service AREA CSS START -------
+-----------------------------------------*/
+.single-service {
+    margin-top: 30px;
+    position: relative;
+}
+.service-box-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    text-align: center;
+}
+
+.service-box-overlay h4 {
+    color: #fff;
+}
+
+/*----------------------------------
+------- event AREA CSS START -------
+-----------------------------------*/
+.event-box {
+	background: #fff;
+    -webkit-box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.09);
+    padding: 40px;
+	margin-top: 30px;
+}
+.event-left {
+    display: table-cell;
+    vertical-align: top;
+	text-align: center;
+    padding-right: 30px;
+}
+.event-left h3 {
+    height: 80px;
+    width: 80px;
+    border: 1px solid #e9e9e9;
+    text-align: center;
+    font-size: 40px;
+    color: #af3c65;
+    font-weight: bold;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+.event-left h3 span {
+    color: #af3c65;
+    font-size: 16px;
+    display: block;
+    padding-top: 5px;
+}
+.event-right {
+    display: table-cell;
+	vertical-align: middle;
+}
+
+/*-------------------------------
+-------- HOME 2 PAGE CSS --------
+-------------------------------*/
+.home3 .sec-title h2::after,
+.home3 .hero-area-content h2,
+.home3 .team-member-info p ,
+.home3 .popup-youtube i:hover,
+
+.home3 .available-price a,
+.home3 .mainmenu li.active > a
+
+ {
+	color: #3c060b;
+}
+.home3 .newsletter-box button ,
+.home3 .team-member-info a:hover,
+.home3 .sec-title h2::before,
+.home3 .menu-right button,
+.home3 .owl-nav div:hover {
+	background: #ffb600;
+}
+.home3 .owl-dot.active,
+.home3 .theme-btn {
+    background: #e96620;
+    border-color: #fff;
+}
+.home3 .team-member-info a,
+.home3 .available-icon a:hover,
+.home3 .theme-btn:hover {
+    color: #f5f4f1;
+	border-color: #ffb600;
+}
+.home3 .theme-btn:hover {
+	background: #8c3325;
+}
+.home3 .nav-tabs li a.active ,
+.home3 .header-top .row {
+	border-color: #bf5e00;
+}
+
+/*----------------------------------
+------- counter AREA CSS START -------
+-----------------------------------*/
+.counter-box {
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.counter-box h2 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+/*----------------------------------
+------- offer AREA CSS START -------
+-----------------------------------*/
+.offer-area .sec-title h2::after {
+	background: #fff;
+}
+.single-offer {
+    position: relative;
+	margin-top: 30px;
+}
+.special-offer-photo img {
+    padding-right: 30px;
+}
+.special-offer-caption {
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 370px;
+    bottom: 0;
+    margin: auto;
+}
+.special-offer-caption a {
+    display: block;
+    position: relative;
+    color: #fff;
+    padding: 12px 30px;
+    background: #e6892f;
+    font-size: 30px;
+    line-height: 38px;
+    font-family: 'Literata', serif;
+}
+.special-offer-caption-text {
+	padding: 12px 30px;
+	background: #fff;
+}
+
+/*--------------------------------------
+-------- ABOUT PAGE CSS START --------
+---------------------------------------*/
+.breadcrumb-area {
+    padding: 240px 0 120px;
+    z-index: 1;
+    position: relative;
+    background-image: url(../images/breadcrumb.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.breadcrumb-area::before {
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+    background: #000000;
+}
+.breadcrumb-area h2 {
+	color: #fff;
+	margin-bottom: 5px;
+}
+.breadcrumb-area li a {
+	color: #fff;
+}
+.breadcrumb-area li::before {
+    content: "/";
+    margin: 0 8px 0 5px;
+}
+.breadcrumb-area li:first-child::before {
+	display:none;
+}
+.breadcrumb-area li {
+    display: inline-block;
+}
+.breadcrumb-area li a:hover,
+.breadcrumb-area li.active a {
+    color: #c19b77;
+}
+/*--------------------------------------
+--------- ABOUT PAGE CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+--------- contact PAGE CSS START ----------
+---------------------------------------*/
+.contact-us-area form input {
+	margin-bottom: 25px;
+	padding: 9px 20px;
+}
+.contact-us-area form textarea{
+	margin-bottom: 15px;
+	height: 160px;
+}
+.contact-us-area form button{
+	cursor: pointer;
+}
+/*--------------------------------------
+------- contact PAGE CSS END ------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- 404 PAGE CSS START --------
+---------------------------------------*/
+.four04 {
+    text-align: center;
+}
+.four04 h1 {
+    font-size: 200px;
+    font-weight: 600;
+}
+.four04 input {
+    padding-right: 35px;
+    margin: 0;
+}
+.four04 button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    margin: auto;
+    background: none;
+    border: none;
+    right: 10px;
+}
+.four04 form {
+    position: relative;
+    max-width: 400px;
+    margin: 17px auto;
+}
+.four04 h4 {
+    margin-top: 8px;
+}
+/*--------------------------------------
+----------- 404 PAGE CSS END -----------
+---------------------------------------*/
+
+/*--------------------------------------
+------ BLOG DETAILS PAGE CSS START -----
+---------------------------------------*/
+.post-author a {
+    margin-right: 12px;
+    margin-top: 2px;
+    display: inline-block;
+}
+
+.post-author a i {
+    margin-right: 2px;
+}
+.blog-details h4.post-title {
+    margin: 20px 0 2px;
+}
+.blog-details .post-author {
+    margin-bottom: 12px;
+}
+.blog-details > p {
+    margin-bottom: 15px;
+}
+.blog-detail-middle {
+    display: flex;
+}
+.blog-detail-middle img {
+    padding-right: 20px;
+    max-width: 40%;
+}
+.blog-detail-middle {
+    margin-bottom: 20px;
+}
+.blog-detail-middle p {
+    margin: 20px 0;
+}
+.about-author {
+    padding-top: 25px;
+}
+.about-author h2 {
+    margin-bottom: 20px;
+}
+.about-author-details {
+    display: flex;
+	padding: 20px;
+	background: #fafafa;
+}
+.author-details-left {
+    flex: 1;
+    margin-right: 15px;
+}
+.author-details-right {
+    flex: 4.2;
+}
+.author-details-right h4 {
+    margin-bottom: 5px;
+}
+.comments-area {
+    margin-top: 40px;
+}
+.comments-area h4 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.single-comment a {
+    color: #000;
+    margin-right: 20px;
+    display: inline-block;
+}
+.single-comment-left {
+    flex: 1;
+}
+.single-comment-right {
+    flex: 5.5;
+    margin-left: 12px;
+}
+.single-comment {
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    padding-bottom: 20px;
+}
+.comments-area li {
+    position: relative;
+}
+.single-comment p {
+    margin-bottom: 5px;
+}
+.comments-area li ul {
+    margin-left: 115px;
+}
+.single-comment::before {
+    content: "";
+    right: 0;
+    left: 115px;
+    background: #aaa;
+    top: 100%;
+    height: 1px;
+    margin: auto;
+    position: absolute;
+}
+.comments-area li ul .single-comment::before {
+    left: 0;
+}
+.blog-reply {
+	margin-top: 40px;
+}
+.contact-us-area form input,
+.blog-reply form input {
+	margin-bottom: 25px;
+	padding: 9px 20px;
+}
+.blog-reply form textarea {
+	margin-bottom: 15px;
+	height: 120px;
+}
+.blog-reply form {
+	margin-top: 25px;
+}
+.blog-reply form button {
+	cursor: pointer;
+}
+.sidebar {
+	padding-left: 20px;
+}
+.sidebar-widget {
+    margin-bottom: 40px;
+}
+.sidebar-widget h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.sidebar-widget form button {
+    background: none;
+	cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    margin: auto;
+}
+.sidebar-widget form {
+    position: relative;
+    border-radius: 9px;
+}
+.sidebar-widget form input {
+    margin-bottom: 0;
+    border-radius: 5px;
+    padding-right: 35px;
+}
+.blog-reply form textarea::-webkit-input-placeholder ,
+.blog-reply form input::-webkit-input-placeholder ,
+.sidebar-widget form input::-webkit-input-placeholder {
+    color: #333;
+}
+.sidebar-widget ul li a {
+    background: #fafafa;
+    display: block;
+    padding: 4px 18px;
+    border-radius: 5px;
+}
+.sidebar-widget ul li {
+    padding: 5px 0;
+}
+.sidebar-widget ul li a:hover {
+    background: #c19b77;
+    color: #fff;
+}
+.sidebar-widget ul li a span {
+    float: right;
+}
+.widget-post-info i {
+    color: #c19b77;
+    margin-right: 5px;
+}
+.widget-post {
+    display: flex;
+    padding: 8px 0;
+}
+.widget-post-img {
+    flex: 1;
+}
+.widget-post-info {
+    flex: 3.2;
+    margin-left: 15px;
+}
+.widget-post-info span {
+    font-size: 12px;
+}
+.widget-post-info p {
+    margin-bottom: 5px;
+}
+.widget-tags a {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+    margin-bottom: 8px;
+    margin-right: 5px;
+	border-radius: 5px;
+}
+.widget-tags a:hover {
+    color: #fff;
+    background: #000;
+}
+.sidebar-widget.widget-quote {
+    margin-bottom: 0;
+    background: #000;
+    padding: 35px;
+    color: #fff;
+}
+.sidebar-widget.widget-quote h4 {
+    color: #fff;
+}
+.sidebar-widget.widget-quote p {
+    margin-bottom: 15px;
+}
+.sidebar-widget.widget-quote h4 i {
+    margin-right: 6px;
+}
+/*--------------------------------------
+------- BLOG DETAILS PAGE CSS END ------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- SCROLL-TO-TOP CSS START --------
+---------------------------------------*/
+.scrollToTop i {
+    width: 40px;
+	display: none;
+    height: 40px;
+    line-height: 39px;
+    background: #000;
+	display: none;
+    color: #fff;
+    position: fixed;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99;
+    text-align: center;
+	font-size: 18px;
+}
+.scrollToTop:hover {
+    background: #0c1239;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.scrollToTop:focus {
+    border: 1px solid #fff;
+    color: #fff;
+}
+/*--------------------------------------
+--------- SCROLL-TO-TOP CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- PRE LOADER CSS START --------
+---------------------------------------*/
+#preloader {
+  position: fixed;
+  z-index: 99999999999;
+  top: 0;
+  left: 0;
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  background: #fff url("../img/loader.html") no-repeat center center;
+}
+/*--------------------------------------
+--------- PRE LOADER CSS END ---------
+---------------------------------------*/
+.desc
+{
+    position: absolute;
+    margin-top: -50px;
+    padding: 15px;
+    text-align: center;
+    background: #ccd3c2;
+    width: 92%;
+    display: flex;
+    box-sizing: border-box;
+    margin-left: 0.5px;
+    border-top: 2px solid #e1e4ce;
+}
+@media only screen and (max-width: 600px) {
+  .desc
+    {
+        position: absolute;
+        padding: 0;
+        margin-top: -16px;
+        font-size: 4px;
+        text-align: center;
+        background: #ccd3c2;
+        width: 75%;
+        margin: 0;
+        display: block;
+        border-top: 1px solid #e1e4ce;
+    }
+}
+.widget h3
+{
+    color: #b95b00;
+}
