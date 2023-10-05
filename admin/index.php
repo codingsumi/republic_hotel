@@ -1,5 +1,31 @@
 <?php include_once 'components/top.php';?>
+<?php
+  session_start();
+  if (isset($_SESSION['loggedIn']['userid'])) {
+    header("Location: dashboard.php");
+  }
+  require_once '../php_assets/db.php';
+  if(isset($_POST['submit'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
+    $check = "SELECT * FROM `users` WHERE `email` = '$username' AND `password` = '$password'";
+    $result = mysqli_query($conn, $check); 
+  
+    if (mysqli_num_rows($result) > 0) { 
+      $row = mysqli_fetch_assoc($result);
+      $_SESSION['loggedIn'] = [
+        'userid' => $row['id'],
+        'email' => $row['email'],
+        'name' => $row['name'],
+      ];
+
+      // header("Location: dashboard.php");
+    } else {
+      $_SESSION['error'] = "Invalid username or password";
+    }
+  }
+?>
 <body>
 
   <main>
@@ -12,8 +38,15 @@
 
               
 
+              <small class="text-danger">
+                <?php
+                if (isset($_SESSION['error'])) {
+                  echo '<div class="flash-message">' . $_SESSION['error'] . '</div>';
+                  unset($_SESSION['error']);
+              }
+                ?>
+              </small>
               <div class="card mb-3">
-
                 <div class="card-body">
                 <div class="d-flex justify-content-center pt-4">
                 <a href="index.html" class="logo d-flex align-items-center w-auto">
@@ -27,7 +60,7 @@
                     <p class="text-center small">Enter your username & password to login</p>
                   </div>
 
-                  <form class="row g-3 needs-validation" novalidate>
+                  <form method="post" action="<?= htmlspecialchars($_SERVER['PHP_SELF']);?>" class="row g-3 needs-validation" novalidate>
 
                     <div class="col-12">
                       <label for="yourUsername" class="form-label">Username</label>
@@ -51,7 +84,7 @@
                       </div>
                     </div>
                     <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit">Login</button>
+                      <button class="btn btn-primary w-100" name="submit" type="submit">Login</button>
                     </div>
                     
                   </form>

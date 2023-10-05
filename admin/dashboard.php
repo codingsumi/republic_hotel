@@ -1,13 +1,19 @@
-<?php include_once 'components/top.php';?>
+<?php include_once 'components/top.php'; ?>
+<?php
+session_start();
+if (!isset($_SESSION['loggedIn']['userid'])) {
+  header("Location: ../");
+}
+?>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <?php include_once 'components/header.php';?>
+  <?php include_once 'components/header.php'; ?>
   <!-- End Header -->
 
   <!-- ======= Sidebar ======= -->
-  <?php include_once 'components/sidebar.php';?>
+  <?php include_once 'components/sidebar.php'; ?>
   <!-- End Sidebar-->
 
   <main id="main" class="main">
@@ -24,88 +30,88 @@
 
     <section class="section dashboard">
       <div class="row">
-            <!-- Sales Card -->
-            <div class="col-xxl-3 col-md-3">
-              <div class="card info-card sales-card">
+        <!-- Sales Card -->
+        <div class="col-xxl-3 col-md-3">
+          <div class="card info-card sales-card">
 
-                <div class="card-body">
-                  <h5 class="card-title">Total Rooms Type</h5>
+            <div class="card-body">
+              <h5 class="card-title">Total Rooms Type</h5>
 
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="bx bxs-building-house"></i>
-                    </div>
-                    <div class="ps-3">
-                      <h6>5</h6>
-                    </div>
-                  </div>
+              <div class="d-flex align-items-center">
+                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                  <i class="bx bxs-building-house"></i>
                 </div>
-
-              </div>
-            </div><!-- End Sales Card -->
-
-            <!-- Sales Card -->
-            <div class="col-xxl-3 col-md-3">
-              <div class="card info-card sales-card">
-
-                <div class="card-body">
-                  <h5 class="card-title">Total Rooms</h5>
-
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="bx bxs-building-house"></i>
-                    </div>
-                    <div class="ps-3">
-                      <h6>100</h6>
-                    </div>
-                  </div>
+                <div class="ps-3">
+                  <h6>5</h6>
                 </div>
-
               </div>
-            </div><!-- End Sales Card -->
+            </div>
 
-            <!-- Sales Card -->
-            <div class="col-xxl-3 col-md-3">
-              <div class="card info-card sales-card">
+          </div>
+        </div><!-- End Sales Card -->
 
-                <div class="card-body">
-                  <h5 class="card-title">Total Employee</h5>
+        <!-- Sales Card -->
+        <div class="col-xxl-3 col-md-3">
+          <div class="card info-card sales-card">
 
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="bx bxs-user-check"></i>
-                    </div>
-                    <div class="ps-3">
-                      <h6>45</h6>
-                    </div>
-                  </div>
+            <div class="card-body">
+              <h5 class="card-title">Total Rooms</h5>
+
+              <div class="d-flex align-items-center">
+                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                  <i class="bx bxs-building-house"></i>
                 </div>
-
-              </div>
-            </div><!-- End Sales Card -->
-
-            <!-- Sales Card -->
-            <div class="col-xxl-3 col-md-3">
-              <div class="card info-card sales-card">
-
-                <div class="card-body">
-                  <h5 class="card-title">Total Sales</h5>
-
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="bx bxs-bar-chart-alt-2"></i>
-                    </div>
-                    <div class="ps-3">
-                      <h6>15200</h6>
-                    </div>
-                  </div>
+                <div class="ps-3">
+                  <h6>100</h6>
                 </div>
-
               </div>
-            </div><!-- End Sales Card -->
+            </div>
+
+          </div>
+        </div><!-- End Sales Card -->
+
+        <!-- Sales Card -->
+        <div class="col-xxl-3 col-md-3">
+          <div class="card info-card sales-card">
+
+            <div class="card-body">
+              <h5 class="card-title">Total Employee</h5>
+
+              <div class="d-flex align-items-center">
+                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                  <i class="bx bxs-user-check"></i>
+                </div>
+                <div class="ps-3">
+                  <h6>45</h6>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div><!-- End Sales Card -->
+
+        <!-- Sales Card -->
+        <div class="col-xxl-3 col-md-3">
+          <div class="card info-card sales-card">
+
+            <div class="card-body">
+              <h5 class="card-title">Total Sales</h5>
+
+              <div class="d-flex align-items-center">
+                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                  <i class="bx bxs-bar-chart-alt-2"></i>
+                </div>
+                <div class="ps-3">
+                  <h6>15200</h6>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div><!-- End Sales Card -->
 
 
-            <div class="col-lg-12">
+        <div class="col-lg-12">
 
           <div class="card">
             <div class="card-body">
