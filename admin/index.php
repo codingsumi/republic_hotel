@@ -4,7 +4,7 @@
   if (isset($_SESSION['loggedIn']['userid'])) {
     header("Location: dashboard.php");
   }
-  require_once '../php_assets/db.php';
+
   if(isset($_POST['submit'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
